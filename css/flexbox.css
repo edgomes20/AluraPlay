@@ -1,3 +1,7 @@
+
+/*MOBILE*/
+
+/*CABECALHO*/
 .cabecalho__container {
     display: flex;
     justify-content: space-between;
@@ -10,12 +14,38 @@
     display: none;
 }
 
+
+/*RODAPE*/
+.rodape__container {
+    display: flex;
+    /*flex-direction: column;
+    flex-wrap: wrap;*/
+    flex-flow: column wrap;
+}
+
+/*SECAO SUPERIOR*/
+.superior__secao__container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+}
+
+
+
+/*TABLET*/
 @media (min-width: 834px) {
 
+    /*CABECALHO*/
     .cabecalho__pesquisar__item {
         display: block;
     }
     
+    /*RODAPE*/
+    .rodape__container {
+        justify-content: space-between;
+        
+    }   
 
-    
 }
